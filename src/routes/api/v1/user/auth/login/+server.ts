@@ -8,7 +8,6 @@ import {createSigner} from "fast-jwt";
 
 const CONNECT_TOKEN:string = env.DB_TOKEN||'';
 const CONNECT_URI:string = env.DB_URL || '';
-const algorithm:string = 'SHA256';
 const jwtSecret:string = env.JWT_SECRET_KEY || '';
 const sign= createSigner({key:jwtSecret})
 
