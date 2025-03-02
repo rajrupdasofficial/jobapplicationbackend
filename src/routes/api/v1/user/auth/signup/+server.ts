@@ -62,7 +62,7 @@ export const POST: RequestHandler =  (async (event ) => {
             return json({ message: 'Error saving data, please check the logs' }, { status: 500 });
         }
     } catch (e) {
-        console.error("Signup error:", e);
+        console.log("Signup error:", e);
         return json({ message: 'Error occurred while signing up' }, { status: 500 });
     }
 });
